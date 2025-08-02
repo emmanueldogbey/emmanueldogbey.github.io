@@ -8,4 +8,4 @@ A data analyst and researcher passionate about urban governance, environmental h
 
 - 🔍 See my [Projects](projects.qmd)
 - 🧠 Learn more [About me](about.qmd)
-- 📰 Read my [Blog](blog.qmd)
+- 📰 Read my [Blog](posts.qmd)
