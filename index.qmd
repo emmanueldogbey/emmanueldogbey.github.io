@@ -1,7 +1,10 @@
 ---
-title: "emmanueldogbey.github.io"
+title: "Emmanuel Dogbey"
 ---
 
-This is a Quarto website.
+# Hi, I’m Emmanuel 👋
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+A data analyst and researcher passionate about urban governance, environmental health, and public policy. Welcome to my digital portfolio.
+
+- 🔍 See my [Projects](projects.qmd)
+- 🧠 Learn more [About me](about.qmd)

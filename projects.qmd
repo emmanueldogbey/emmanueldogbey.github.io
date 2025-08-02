@@ -1,0 +1,15 @@
+## Featured Projects
+
+### 🗺️ Mapping Waste Infrastructure
+Used QGIS and R to visualize and analyze spatial distribution of recycling centers in Accra.
+
+- 🔗 [Project repo](https://github.com/your/project)
+- 📄 [Full write-up](posts/mapping-waste.qmd)
+
+---
+
+### 🧠 COVID-19 Analytics Dashboard
+ML-based exploration of COVID trends across LMICs using R Shiny.
+
+- 🔗 [Live dashboard](https://yourdashboard.netlify.app)
+- 🔍 [Source code](https://github.com/your/covid-dashboard)

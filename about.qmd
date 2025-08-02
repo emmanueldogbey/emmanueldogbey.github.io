@@ -2,4 +2,6 @@
 title: "About"
 ---
 
-About this site
+Sections for bio, skills, education, CV download, etc.
+
+
