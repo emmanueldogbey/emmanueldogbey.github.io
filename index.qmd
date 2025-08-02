@@ -1,5 +1,5 @@
 ---
-title: "Emmanuel Dogbey"
+title: "Emmanuel Dogbey's Digital Portfolio"
 ---
 
 # Hi, I’m Emmanuel 👋
@@ -8,3 +8,4 @@ A data analyst and researcher passionate about urban governance, environmental h
 
 - 🔍 See my [Projects](projects.qmd)
 - 🧠 Learn more [About me](about.qmd)
+- 📰 Read my [Blog](blog.qmd)

@@ -4,7 +4,7 @@
 Used QGIS and R to visualize and analyze spatial distribution of recycling centers in Accra.
 
 - 🔗 [Project repo](https://github.com/your/project)
-- 📄 [Full write-up](posts/mapping-waste.qmd)
+# 📄 [Full write-up](posts/mapping-waste.qmd)
 
 ---
 
