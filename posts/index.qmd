@@ -1,0 +1,10 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  type: default
+---
+
+Welcome to my blog! Here you’ll find posts on data analytics, urban governance, and public policy.
+
+Blog coming soon!

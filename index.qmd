@@ -1,11 +1,45 @@
 ---
-title: "Emmanuel Dogbey's Digital Portfolio"
+title: "Hi! I’m Emmanuel Dogbey"
+about:
+  template: trestles
+  image: images/profile-pic.jpg
+  image-width: 10em
+  image-shape: round
+  links: 
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/emmanuel-dogbey/
+    - icon: github
+      text: Github
+      href: https://github.com/emmanueldogbey/
+toc: false
+page-layout: full
 ---
 
-# Hi, I’m Emmanuel 👋
+I'm a WASH professional, data analyst, and researcher passionate about urban governance, environmental health, sanitation, wastewater, climate action, and public policy. 
 
-A data analyst and researcher passionate about urban governance, environmental health, and public policy. Welcome to my digital portfolio.
+Welcome to my digital portfolio!
+
+I build tools, models, and dashboards, and support the improvement and scale-up of national systems that help turn data into action. My work helps Government and partners strengthen planning, service delivery and monitoring across Ghana’s sanitation and hygiene sub-sector. 
+
+I also contribute to broader systems strengthening in the WASH sector by supporting policy and strategy development, coordinating across institutions as part of a wider whole-of-society approach for WASH governance, and embedding data use into national and district environmental sanitation governance through a place-based planning approach informed by geospatial analysis.
+
+---
+
+## Education
+
+University of Durham | Durham, UK <br>
+Institute of Hazard, Risk and Resilience | Department of Geography <br>
+MSc in Risk (Environment and Climate) | Sept 2019 - Sept 2020 <br>
+**Graduated with Distinction**
+
+Kwame Nkrumah University of Science and Technology | Kumasi, Ghana <br>
+Department of Geography and Rural Dev't <br>
+B.A (Honours) in Geography and Rural Dev't | Sept 2013 - June 2017 <br>
+**Graduated with First Class Honours**
+
+---
 
 - 🔍 See my [Projects](projects.qmd)
 - 🧠 Learn more [About me](about.qmd)
-- 📰 Read my [Blog](posts.qmd)
+- 📰 Read my [Blog](posts/)

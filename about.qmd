@@ -2,6 +2,36 @@
 title: "About"
 ---
 
-Sections for bio, skills, education, CV download, etc.
+## About
+
+Hi, I'm **Emmanuel Dogbey**, a WASH professional, spatial data analyst, and monitoring & evaluation (M&E) specialist based in Accra, Ghana, working at the intersection of WASH governance, geospatial analysis, and public policy. With a Master’s in Risk (Distinction) from Durham University and a First-Class BA in Geography and Rural Development from KNUST, I bring both academic rigour and practical experience to environmental health and sanitation systems strengthening.
+
+Currently, I serve as **Thematic Lead for Monitoring and Evaluation (M\&E)** under the **GoG–UNICEF Sanitation and Hygiene Programme**, where I coordinate national efforts to co-develop and strengthen M&E frameworks, scale digital tools such as the Basic Sanitation Information System (BaSIS), design planning and budgeting tools with integrated Results-Based Financing (RBF) features, and contribute to the rollout of SMS-based monitoring systems. All of this supports and promotes evidence-based decision-making at national and sub-national levels. 
+
+I work across the full analytics pipeline—from  data collection and cleaning to advanced analysis, spatial visualisation, and translation of insights to policy. My projects often combine statistical modelling, geospatial tools, and the production of decision-oriented reports and dashboards to support planning and programme management. For example, I have:
+
+* Modelled and predicted district-level waste collection rates using census data, district typologies, and regression analysis
+* Built an interactive R Shiny dashboard visualising status of sewage treatment facilities in Ghana
+* Developed an R-based workflow to query the Ghana Statistical Service’s StatsBank API, enabling reproducible access to official WASH indicators
+* Used Python to perform topic modelling and sentiment analysis on WASH and flood-related media content using NLP techniques.
+* Created custom mapping tools using Folium and Geopandas to overlay geocoded inputs on Ghana’s district boundaries
+
+Beyond analytics, I contribute to broader systems strengthening, facilitating inter-agency coordination, supporting policy and strategy development, and embedding the use of data and place-based geospatial insights into national and district-level planning. I work closely with Government institutions, development partners, and civil society to promote alignment, uptake, and impact.
+
+Over the years, I’ve contributed to national efforts on:
+
+* Climate-resilient WASH programming (supporting Ghana’s NDCs)
+* District sanitation monitoring and open defecation free validation 
+* WASH financing using the Trackfin methodology
+* CLTS capacity building and community engagement
+* Environmental safeguards and solid waste management under the GARID Project
+
+My technical toolbox includes **R, Python, QGIS, ArcGIS, and the Microsoft Suite**, with experience building tools, dashboards, and statistical models that support planning and policy. I’ve authored peer-reviewed publications on microplastic pollution, landfill siting, and wildfire risk, and regularly engage national and international partners to deliver high-impact, context-sensitive solutions.
+
+I aim to bridge data and governance to help build and strengthen systems that are credible, actionable, and equitable.
+
+
+
+
 
 

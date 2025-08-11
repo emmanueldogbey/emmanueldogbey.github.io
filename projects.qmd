@@ -1,15 +1,83 @@
-## Featured Projects
+---
+title: "Featured Projects"
+format: html
+page-layout: full
+---
 
-### 🗺️ Mapping Waste Infrastructure
-Used QGIS and R to visualize and analyze spatial distribution of recycling centers in Accra.
+A selection of projects combining statistical modeling, geospatial analysis, NLP, and dashboard development — with a focus on WASH, environmental planning, and policy applications in Ghana and similar contexts.
 
-- 🔗 [Project repo](https://github.com/your/project)
-# 📄 [Full write-up](posts/mapping-waste.qmd)
+
+
+## 🧼 WASH Service Level Indicator Construction
+
+**Tools:** R, dplyr, sf, purrr, janitor
+**Overview:** Cleaned and harmonized six national datasets (population, sanitation, waste, water access, etc.) to compute access indicators across 261 districts. Integrated spatial joins and regional metadata.
+**Status:** Delivered to CDD-Ghana for planning and advocacy.
+**Deliverables:** [R script](), [Final dataset (CSV)]()
 
 ---
 
-### 🧠 COVID-19 Analytics Dashboard
-ML-based exploration of COVID trends across LMICs using R Shiny.
+## ♻️ Predictive Modelling of Waste Collection Rates (2010–2021)
 
-- 🔗 [Live dashboard](https://yourdashboard.netlify.app)
-- 🔍 [Source code](https://github.com/your/covid-dashboard)
+**Tools:** R, ggplot2, lm, sf
+**Overview:** Built a linear regression model to estimate district-level solid waste collection rates from generation estimates and district types. Merged PHC datasets and visualized results using maps and residual plots.
+**Status:** Complete; ready for integration into dashboards or reports.
+
+---
+
+## 🌍 Sewage Facility Dashboard
+
+**Tools:** R Shiny, leaflet, shinydashboard
+**Overview:** Interactive tool visualizing sewage treatment facilities across Ghana by region, condition, and type. Includes dynamic maps and summary tables.
+**Status:** MVP built; deployment pending.
+**Source Code:** [GitHub Repository]()
+
+---
+
+## 🌐 StatsBank API Automation
+
+**Tools:** R, httr2, jsonlite
+**Overview:** Created a full workflow for querying Ghana Statistical Service’s StatsBank API. Handled JSON logic, error handling, and data extraction for key WASH indicators from PHC 2021.
+**Status:** Script and tutorial complete; under version control.
+**Tutorial:** [Blogpost-style HTML](#)
+
+---
+
+## 🧪 Solid Waste Trends Visualization
+
+**Tools:** R, ggplot2, sf
+**Overview:** Harmonized census waste data across 2010 and 2021, accounted for boundary changes, and visualized trends using choropleths and histograms. Highlighted disparities and temporal patterns.
+**Status:** Pipeline complete; supports planning insights.
+
+---
+
+## 🧠 Topic Modelling of Flood News Coverage
+
+**Tools:** Python, Gensim, NLTK, Google CSE API
+**Overview:** Scraped and processed flood-related news (2010–2022) from Ghanaian sources. Applied LDA topic modelling and tuned using coherence scores to identify dominant reporting themes.
+**Status:** Topics finalized; visualization with pyLDAvis underway.
+
+---
+
+## 📰 Sentiment Analysis of Water Utility Coverage
+
+**Tools:** Python, VADER, pandas
+**Overview:** Analyzed tone and emotional framing in post-2020 media coverage of the Ghana Water Company. Filtered low-information articles and generated outlet-wise sentiment summaries.
+**Status:** Preliminary results ready; dashboards in development.
+
+---
+
+## 🗺️ Geo-tagged Locator Map Tool
+
+**Tools:** Python, Folium, Geopandas, Nominatim
+**Overview:** CLI-based tool that takes user input, returns geo-coordinates via Nominatim, and overlays location on Ghana district map using Folium.
+**Status:** Desktop-ready; web integration in progress.
+
+---
+
+
+
+
+
+
+
