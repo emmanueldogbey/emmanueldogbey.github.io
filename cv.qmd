@@ -4,8 +4,6 @@ page-layout: article
 toc: false
 ---
 
-# Emmanuel Dogbey
-
 📍 Accra, Ghana  
 📞 +233 55 819 9879  
 ✉️ [shaddaidogbey@gmail.com](mailto:shaddaidogbey@gmail.com)  
