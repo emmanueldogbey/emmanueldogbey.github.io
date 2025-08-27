@@ -1,0 +1,143 @@
+---
+title: "Emmanuel Dogbey"
+page-layout: article
+toc: false
+---
+
+# Emmanuel Dogbey
+
+📍 Accra, Ghana  
+📞 +233 55 819 9879  
+✉️ [shaddaidogbey@gmail.com](mailto:shaddaidogbey@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/emmanuel-dogbey) | [Website](https://emmanueldogbey.github.io) | [ORCID](https://orcid.org/0000-0003-2155-2106)  
+
+---
+
+## Professional Summary
+WASH professional and data analyst with 3+ years’ experience in governance, service delivery, and supporting efforts at accelerating progress towards safely managed and climate-resilient WASH. Skilled in coordinating multi-stakeholder processes, managing donor-funded programmes, and leveraging data, statistical analysis, geospatial analysis, and modelling to strengthen decision-making, improve policy alignment, and enhance service outcomes across rural, urban, and emergency contexts.
+
+---
+
+## Core Competencies
+- Program and project planning and management  
+- Proposal and project concept note development  
+- Strategic stakeholder engagement and partnership building  
+- Resource mobilisation and donor fund management  
+- Technical backstopping and institutional strengthening  
+- Monitoring, evaluation and learning  
+- Critical and analytical research skills  
+- Statistical and geospatial data analysis and visualisation  
+- Technical and policy briefs and reports  
+
+---
+
+## Tools
+**R | Python | QGIS | ArcGIS | Power BI | Microsoft Office Suite**
+
+---
+
+## Formal Education
+- **MSc Risk**, Durham University, UK — *Distinction* (Sep 2019 – Sep 2020)  
+- **BA Geography and Rural Development**, KNUST, Ghana — *First Class Honours* (Oct 2013 – Jun 2017)  
+
+---
+
+## Short Courses & Trainings
+- Sustainable Management of End-of-Life Vehicles, GIZ & Wuppertal Institute, Germany (May 2025)  
+- OCPP West Africa Marine Litter Training Programme, Ghana (Oct – Nov 2024)  
+- Introduction to Project Management and Public Financial Management, Ghana (Jul 2024)  
+- Assistant Directors Training Workshop (Goal Setting, Self-leadership, Accountability), Ghana (May 2024)  
+- Sustainable and Inclusive Urban Development, DANIDA Fellowship Centre, Denmark (Feb – Mar 2024)  
+- Urban Environmental Management, JICA & ICETT, Japan (Jan – Feb 2024)  
+- Environmental, Social, Health and Safety Training, World Bank & GARID, Ghana (Dec 2023)  
+- Essentials of Environmental and Social Risk Management, GIMPA & KNUST, Ghana (Mar 2023)  
+
+---
+
+## Professional Experience
+
+### Program Officer, Environmental Health and Sanitation  
+**Ministry of Local Government, Ghana** | May 2022 – Present  
+*M&E Thematic Lead, GoG–UNICEF Sanitation & Hygiene Programme*  
+
+**Planning, Sector Coordination & M&E**  
+- Lead development of the costed **2026–2029 Sanitation Sector Medium Term Development Plan**.  
+- Harmonised national sanitation and hygiene M&E systems.  
+- Developed planning and monitoring tools (Climate Resilient Sanitation District Update Tool, Target Setting Tool, Budgeting Tool).  
+- Developed ToR for Sanitation M&E Task Team.  
+
+**WASH Climate Action**  
+- Supported integration of WASH in Ghana’s **NDC 3.0 Programmes of Action**.  
+- Monitored 5 Integrated Recycling & Compost Plants for **carbon trading readiness**.  
+
+**Urban Sanitation Infrastructure**  
+- Environmental Safeguards Focal Point for **GARID Project** landfill and transfer station works.  
+- Coordinated stakeholder consultations for Sustainable Faecal Sludge Management Project.  
+
+**WASH in Emergencies & Hand Hygiene**  
+- Contributed to WASH in Emergencies assessment during the Oct 2024 cholera outbreak.  
+- Coordinated Ghana’s input to **WHO Global Guidelines for Hand Hygiene**.  
+
+**Capacity Development & Institutional Strengthening**  
+- Analysed sanitation HR capacity across **261 districts**.  
+- Led technical backstopping for BaSIS implementation in **17 districts**.  
+- Trained 110 District Staff on CLTS methods.  
+- Conducted water treatment, water safety and financial flow assessments (TrackFin).  
+
+---
+
+### Consultant  
+**Astute Business Consulting, Ghana** | Nov 2021 – Apr 2022  
+- Developed product/service descriptions and market differentiation for 17 companies.  
+- Conducted ESIA for 2 bio-diesel startups (Nigeria & Ghana).  
+- Advocated for Microsoft 365 collaborative model, reducing compilation time by 1 day.  
+- Developed **2 proposals** and **5 pitch decks** for funding and partnerships.  
+
+---
+
+### Researcher (MSc Dissertation Partnership)  
+**Yorkshire Dales Rivers Trust, UK** | May – Sep 2020  
+- Developed hydrologic & flood models using **R (Dynamic Topmodel)** and **HEC-RAS**.  
+- Produced design flood hydrographs and evaluated NFM effectiveness.  
+- Drafted technical report with recommendations for NFM in Brompton catchment.  
+
+---
+
+### Information Officer  
+**Keta Municipal Assembly, Ghana** | Sep 2018 – Aug 2019  
+- Drafted report on fishing ban impacts for Minister of Fisheries.  
+- Provided logistics and facilitated traditional authority engagement workshops.  
+- Co-led town hall sessions to elicit citizen inputs into district plans.  
+
+---
+
+### Teaching & Research Assistant  
+**KNUST, Ghana** | Aug 2017 – Aug 2018  
+- Supported academic research, data analysis, and publication.  
+- Coordinated journal production for *KNUST Journal of Geography and Development*.  
+- Managed field trip logistics for 120+ students.  
+- Assisted final-year students with dissertations.  
+
+---
+
+## Portfolio
+- **[Personal Website](https://emmanueldogbey.github.io)** — built with R Quarto & GitHub Pages ([repo](https://github.com/emmanueldogbey/emmanueldogbey.github.io))  
+- **[StatsBank API in R](https://github.com/emmanueldogbey/gss-api-r)** — workflow for querying Ghana Statistical Service API.  
+- **[WASH Indicators Dataset](https://github.com/emmanueldogbey/cdd-wash-data)** — cleaned & harmonised 6 datasets from 2021 PHC.  
+- **R Shiny Dashboard** — interactive tool of sewage facilities in Ghana ([repo](https://github.com/emmanueldogbey/cdd-wash-data)).  
+
+---
+
+## Publications & Conferences
+- Asori, M., **Dogbey, E.**, Ampofo, S. T., Odei, J. (2023). *Microplastic pollution in Africa...* [DOI](https://doi.org/10.1108/MEQ-06-2023-0170)  
+- Asori, M., **Dogbey, E.**, Morgan, A. K., et al. (2022). *GIS-based landfill siting in Ashanti Region, Ghana.* [DOI](https://doi.org/10.1108/MEQ-07-2021-0159)  
+- Asori, M., **Dogbey, E.**, Dumedah, G. (2020). *Wildfire hazard and risk modelling in Northern Ghana.* [Link](https://bit.ly/32cnMzm)  
+- Author. (2020). *Modelling NFM for flood risk reduction in Brompton, UK.* Yorkshire Dales Rivers Trust.  
+- Aboagye, D., **Dogbey, E.** (2018). *Gender, flood risk perception and adaptation to flooding in Kumasi.* Presented at Ghana Geographers’ Conference.  
+
+---
+
+## Awards
+- **Commonwealth Shared Scholarship** (2019–2020)  
+- **Best Student in Geography and Rural Development**, Royal Bank Awards (2017)  
+

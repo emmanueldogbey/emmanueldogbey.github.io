@@ -2,9 +2,9 @@
 title: "About"
 ---
 
-## About
+View my [CV](cv.qmd)
 
-Hi, I'm **Emmanuel Dogbey**, a WASH professional, spatial data analyst, and monitoring & evaluation (M&E) specialist based in Accra, Ghana, working at the intersection of WASH governance, geospatial analysis, and public policy. With a Master’s in Risk (Distinction) from Durham University and a First-Class BA in Geography and Rural Development from KNUST, I bring both academic rigour and practical experience to environmental health and sanitation systems strengthening.
+Hi, I'm **Emmanuel Dogbey**, a WASH professional, spatial data analyst, and researcher based in Accra, Ghana, working at the intersection of WASH governance, geospatial analysis, and public policy. With a Master’s in Risk (Distinction) from Durham University and a First-Class BA in Geography and Rural Development from KNUST, I bring both academic rigour and practical experience to environmental health and sanitation systems strengthening.
 
 Currently, I serve as **Thematic Lead for Monitoring and Evaluation (M\&E)** under the **GoG–UNICEF Sanitation and Hygiene Programme**, where I coordinate national efforts to co-develop and strengthen M&E frameworks, scale digital tools such as the Basic Sanitation Information System (BaSIS), design planning and budgeting tools with integrated Results-Based Financing (RBF) features, and contribute to the rollout of SMS-based monitoring systems. All of this supports and promotes evidence-based decision-making at national and sub-national levels. 
 
