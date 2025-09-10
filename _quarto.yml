@@ -3,7 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "emmanueldogbey.github.io"
+  title: ""
+  search: false
   navbar:
     left:
       - href: index.qmd
@@ -21,7 +22,7 @@ format:
       - cosmo
       - brand
     css: styles.css
-    toc: true
+    toc: false
 
 
 

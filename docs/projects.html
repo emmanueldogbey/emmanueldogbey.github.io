@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Featured Projects – emmanueldogbey.github.io</title>
+<title>Featured Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,10 +26,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -41,18 +37,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -78,12 +62,6 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">emmanueldogbey.github.io</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -113,14 +91,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -129,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -143,43 +119,59 @@ ul.task-list li input[type="checkbox"] {
 
 <p>A selection of projects combining statistical modeling, geospatial analysis, NLP, and dashboard development — with a focus on WASH, environmental planning, and policy applications in Ghana and similar contexts.</p>
 <div class="grid">
-<section id="wash-service-level-indicator-construction" class="level2 g-col-6">
+<section id="wash-service-level-indicator-construction" class="level2 g-col-6 card">
 <h2 class="anchored" data-anchor-id="wash-service-level-indicator-construction">🧼 WASH Service Level Indicator Construction</h2>
-<p><strong>Tools:</strong> R, dplyr, sf, purrr, janitor <strong>Overview:</strong> Cleaned and harmonized six national datasets (population, sanitation, waste, water access, etc.) to compute access indicators across 261 districts. Integrated spatial joins and regional metadata. <strong>Status:</strong> Delivered to CDD-Ghana for planning and advocacy. <strong>Deliverables:</strong> <a href="">R script</a>, <a href="">Final dataset (CSV)</a></p>
+<p><strong>Tools:</strong> R, dplyr, sf, purrr, janitor</p>
+<p><strong>Overview:</strong> Cleaned and harmonized six national datasets (population, sanitation, waste, water access, etc.) to compute access indicators across 261 districts. Integrated spatial joins and regional metadata.</p>
+<p><a href="https://github.com/emmanueldogbey/cdd-wash-data">R script</a> <a href="https://github.com/emmanueldogbey/cdd-wash-data/blob/main/output/cdd_data.csv">Final dataset (CSV)</a></p>
 </section>
-<section id="predictive-modelling-of-waste-collection-rates-20102021" class="level2 g-col-6">
+<section id="predictive-modelling-of-waste-collection-rates-20102021" class="level2 g-col-6 card">
 <h2 class="anchored" data-anchor-id="predictive-modelling-of-waste-collection-rates-20102021">♻️ Predictive Modelling of Waste Collection Rates (2010–2021)</h2>
-<p><strong>Tools:</strong> R, ggplot2, lm, sf <strong>Overview:</strong> Built a linear regression model to estimate district-level solid waste collection rates from generation estimates and district types. Merged PHC datasets and visualized results using maps and residual plots. <strong>Status:</strong> Complete; ready for integration into dashboards or reports.</p>
+<p><strong>Tools:</strong> R, ggplot2, lm, sf</p>
+<p><strong>Overview:</strong> Built a linear regression model to estimate district-level solid waste collection rates from generation estimates and district types. Merged PHC datasets and visualized results using maps and residual plots.</p>
+<p><a href="https://github.com/emmanueldogbey/waste-collection-prediction">R script</a></p>
 </section>
 </div>
 <div class="grid">
-<section id="sewage-facility-dashboard" class="level2 g-col-6">
+<section id="sewage-facility-dashboard" class="level2 g-col-6 card">
 <h2 class="anchored" data-anchor-id="sewage-facility-dashboard">🌍 Sewage Facility Dashboard</h2>
-<p><strong>Tools:</strong> R Shiny, leaflet, shinydashboard <strong>Overview:</strong> Interactive tool visualizing sewage treatment facilities across Ghana by region, condition, and type. Includes dynamic maps and summary tables. <strong>Status:</strong> MVP built; deployment pending. <strong>Source Code:</strong> <a href="">GitHub Repository</a></p>
+<p><strong>Tools:</strong> R Shiny, leaflet, shinydashboard</p>
+<p><strong>Overview:</strong> Interactive tool visualizing sewage treatment facilities across Ghana by region, condition, and type. Includes dynamic maps and summary tables.</p>
+<p><a href="https://emmanueldogbey.shinyapps.io/sewage-facilities-dashboard/">Link to Dashboard</a></p>
 </section>
-<section id="statsbank-api-automation" class="level2 g-col-6">
+<section id="statsbank-api-automation" class="level2 g-col-6 card">
 <h2 class="anchored" data-anchor-id="statsbank-api-automation">🌐 StatsBank API Automation</h2>
-<p><strong>Tools:</strong> R, httr2, jsonlite <strong>Overview:</strong> Created a full workflow for querying Ghana Statistical Service’s StatsBank API. Handled JSON logic, error handling, and data extraction for key WASH indicators from PHC 2021. <strong>Status:</strong> Script and tutorial complete; under version control. <strong>Tutorial:</strong> <a href="#">Blogpost-style HTML</a></p>
+<p><strong>Tools:</strong> R, httr2, jsonlite</p>
+<p><strong>Overview:</strong> Created a full workflow for querying Ghana Statistical Service’s StatsBank API. Handled JSON logic, error handling, and data extraction for key WASH indicators from PHC 2021.</p>
+<p><a href="#">Blogpost-style HTML</a>, <a href="https://github.com/emmanueldogbey/gss-api-r">Github repo</a></p>
 </section>
 </div>
 <div class="grid">
-<section id="solid-waste-trends-visualization" class="level2 g-col-6">
-<h2 class="anchored" data-anchor-id="solid-waste-trends-visualization">🧪 Solid Waste Trends Visualization</h2>
-<p><strong>Tools:</strong> R, ggplot2, sf <strong>Overview:</strong> Harmonized census waste data across 2010 and 2021, accounted for boundary changes, and visualized trends using choropleths and histograms. Highlighted disparities and temporal patterns. <strong>Status:</strong> Pipeline complete; supports planning insights.</p>
-</section>
-<section id="topic-modelling-of-flood-news-coverage" class="level2 g-col-6">
-<h2 class="anchored" data-anchor-id="topic-modelling-of-flood-news-coverage">🧠 Topic Modelling of Flood News Coverage</h2>
-<p><strong>Tools:</strong> Python, Gensim, NLTK, Google CSE API <strong>Overview:</strong> Scraped and processed flood-related news (2010–2022) from Ghanaian sources. Applied LDA topic modelling and tuned using coherence scores to identify dominant reporting themes. <strong>Status:</strong> Topics finalized; visualization with pyLDAvis underway.</p>
-</section>
-</div>
-<div class="grid">
-<section id="sentiment-analysis-of-water-utility-coverage" class="level2 g-col-6">
+<section id="sentiment-analysis-of-water-utility-coverage" class="level2 g-col-6 card">
 <h2 class="anchored" data-anchor-id="sentiment-analysis-of-water-utility-coverage">📰 Sentiment Analysis of Water Utility Coverage</h2>
-<p><strong>Tools:</strong> Python, VADER, pandas <strong>Overview:</strong> Analyzed tone and emotional framing in post-2020 media coverage of the Ghana Water Company. Filtered low-information articles and generated outlet-wise sentiment summaries. <strong>Status:</strong> Preliminary results ready; dashboards in development.</p>
+<p><strong>Tools:</strong> Python, VADER, pandas</p>
+<p><strong>Overview:</strong> Analyzed tone and emotional framing in post-2020 media coverage of the Ghana Water Company. Filtered low-information articles and generated outlet-wise sentiment summaries.</p>
+<p><a href="https://github.com/emmanueldogbey/sentiment-analysis-gwcl">Github repo</a></p>
 </section>
-<section id="geo-tagged-locator-map-tool" class="level2 g-col-6">
+<section id="topic-modelling-of-flood-news-coverage" class="level2 g-col-6 card">
+<h2 class="anchored" data-anchor-id="topic-modelling-of-flood-news-coverage">🧠 Topic Modelling of Flood News Coverage</h2>
+<p><strong>Tools:</strong> Python, Gensim, NLTK, Google CSE API</p>
+<p><strong>Overview:</strong> Scraped and processed flood-related news (2010–2022) from Ghanaian sources. Applied LDA topic modelling and tuned using coherence scores to identify dominant reporting themes.</p>
+<p><a href="https://github.com/emmanueldogbey/topic-modelling">Github repo</a></p>
+</section>
+</div>
+<div class="grid">
+<section id="geo-tagged-locator-map-tool" class="level2 g-col-6 card">
 <h2 class="anchored" data-anchor-id="geo-tagged-locator-map-tool">🗺️ Geo-tagged Locator Map Tool</h2>
-<p><strong>Tools:</strong> Python, Folium, Geopandas, Nominatim <strong>Overview:</strong> CLI-based tool that takes user input, returns geo-coordinates via Nominatim, and overlays location on Ghana district map using Folium. <strong>Status:</strong> Desktop-ready; web integration in progress.</p>
+<p><strong>Tools:</strong> Python, Folium, Geopandas, Nominatim</p>
+<p><strong>Overview:</strong> CLI-based tool that takes user input, returns geo-coordinates via Nominatim, and overlays location on Ghana district map using Folium.</p>
+<p><a href="https://github.com/emmanueldogbey/district-finder-app">Github repo</a></p>
+</section>
+<section id="ghana-wash-policy-strategy-document-catalog" class="level2 g-col-6 card">
+<h2 class="anchored" data-anchor-id="ghana-wash-policy-strategy-document-catalog">📑 Ghana WASH Policy &amp; Strategy Document Catalog</h2>
+<p><strong>Tools:</strong> R, httr, jsonlite, tidyverse, htmltools</p>
+<p><strong>Overview:</strong> Built an interactive catalog to consolidate Water, Sanitation and Hygiene (WASH) policies and strategic documents in Ghana, which are often scattered across multiple institutional websites. The tool extracts metadata from the Internet Archive (title, year, creator, sector), generates responsive document cards, and provides interactive filters (by year and sector) for easy navigation. This provides a <strong>single reference hub</strong> for policymakers, researchers, and practitioners to access and explore Ghana’s WASH knowledge base.</p>
+<p><a href="https://ghanawashdocs.github.io">Website</a> <a href="https://github.com/emmanueldogbey/ghanawashdocs">GitHub repo</a></p>
 </section>
 </div>
 

@@ -7,6 +7,62 @@
     "text": "A selection of projects combining statistical modeling, geospatial analysis, NLP, and dashboard development — with a focus on WASH, environmental planning, and policy applications in Ghana and similar contexts."
   },
   {
+    "objectID": "projects.html#wash-service-level-indicator-construction",
+    "href": "projects.html#wash-service-level-indicator-construction",
+    "title": "Featured Projects",
+    "section": "🧼 WASH Service Level Indicator Construction",
+    "text": "🧼 WASH Service Level Indicator Construction\nTools: R, dplyr, sf, purrr, janitor\nOverview: Cleaned and harmonized six national datasets (population, sanitation, waste, water access, etc.) to compute access indicators across 261 districts. Integrated spatial joins and regional metadata.\nR script Final dataset (CSV)"
+  },
+  {
+    "objectID": "projects.html#predictive-modelling-of-waste-collection-rates-20102021",
+    "href": "projects.html#predictive-modelling-of-waste-collection-rates-20102021",
+    "title": "Featured Projects",
+    "section": "♻️ Predictive Modelling of Waste Collection Rates (2010–2021)",
+    "text": "♻️ Predictive Modelling of Waste Collection Rates (2010–2021)\nTools: R, ggplot2, lm, sf\nOverview: Built a linear regression model to estimate district-level solid waste collection rates from generation estimates and district types. Merged PHC datasets and visualized results using maps and residual plots.\nR script"
+  },
+  {
+    "objectID": "projects.html#sewage-facility-dashboard",
+    "href": "projects.html#sewage-facility-dashboard",
+    "title": "Featured Projects",
+    "section": "🌍 Sewage Facility Dashboard",
+    "text": "🌍 Sewage Facility Dashboard\nTools: R Shiny, leaflet, shinydashboard\nOverview: Interactive tool visualizing sewage treatment facilities across Ghana by region, condition, and type. Includes dynamic maps and summary tables.\nLink to Dashboard"
+  },
+  {
+    "objectID": "projects.html#statsbank-api-automation",
+    "href": "projects.html#statsbank-api-automation",
+    "title": "Featured Projects",
+    "section": "🌐 StatsBank API Automation",
+    "text": "🌐 StatsBank API Automation\nTools: R, httr2, jsonlite\nOverview: Created a full workflow for querying Ghana Statistical Service’s StatsBank API. Handled JSON logic, error handling, and data extraction for key WASH indicators from PHC 2021.\nBlogpost-style HTML, Github repo"
+  },
+  {
+    "objectID": "projects.html#sentiment-analysis-of-water-utility-coverage",
+    "href": "projects.html#sentiment-analysis-of-water-utility-coverage",
+    "title": "Featured Projects",
+    "section": "📰 Sentiment Analysis of Water Utility Coverage",
+    "text": "📰 Sentiment Analysis of Water Utility Coverage\nTools: Python, VADER, pandas\nOverview: Analyzed tone and emotional framing in post-2020 media coverage of the Ghana Water Company. Filtered low-information articles and generated outlet-wise sentiment summaries.\nGithub repo"
+  },
+  {
+    "objectID": "projects.html#topic-modelling-of-flood-news-coverage",
+    "href": "projects.html#topic-modelling-of-flood-news-coverage",
+    "title": "Featured Projects",
+    "section": "🧠 Topic Modelling of Flood News Coverage",
+    "text": "🧠 Topic Modelling of Flood News Coverage\nTools: Python, Gensim, NLTK, Google CSE API\nOverview: Scraped and processed flood-related news (2010–2022) from Ghanaian sources. Applied LDA topic modelling and tuned using coherence scores to identify dominant reporting themes.\nGithub repo"
+  },
+  {
+    "objectID": "projects.html#geo-tagged-locator-map-tool",
+    "href": "projects.html#geo-tagged-locator-map-tool",
+    "title": "Featured Projects",
+    "section": "🗺️ Geo-tagged Locator Map Tool",
+    "text": "🗺️ Geo-tagged Locator Map Tool\nTools: Python, Folium, Geopandas, Nominatim\nOverview: CLI-based tool that takes user input, returns geo-coordinates via Nominatim, and overlays location on Ghana district map using Folium.\nGithub repo"
+  },
+  {
+    "objectID": "projects.html#ghana-wash-policy-strategy-document-catalog",
+    "href": "projects.html#ghana-wash-policy-strategy-document-catalog",
+    "title": "Featured Projects",
+    "section": "📑 Ghana WASH Policy & Strategy Document Catalog",
+    "text": "📑 Ghana WASH Policy & Strategy Document Catalog\nTools: R, httr, jsonlite, tidyverse, htmltools\nOverview: Built an interactive catalog to consolidate Water, Sanitation and Hygiene (WASH) policies and strategic documents in Ghana, which are often scattered across multiple institutional websites. The tool extracts metadata from the Internet Archive (title, year, creator, sector), generates responsive document cards, and provides interactive filters (by year and sector) for easy navigation. This provides a single reference hub for policymakers, researchers, and practitioners to access and explore Ghana’s WASH knowledge base.\nWebsite GitHub repo"
+  },
+  {
     "objectID": "posts/index.html",
     "href": "posts/index.html",
     "title": "Blog",
@@ -14,18 +70,81 @@
     "text": "Welcome to my blog! Here you’ll find posts on data analytics, urban governance, and public policy.\nBlog coming soon!\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Emmanuel Dogbey",
+    "section": "",
+    "text": "📍 Accra, Ghana\n📞 +233 55 819 9879\n✉️ shaddaidogbey@gmail.com\n🔗 LinkedIn | Website | ORCID"
+  },
+  {
+    "objectID": "cv.html#professional-summary",
+    "href": "cv.html#professional-summary",
+    "title": "Emmanuel Dogbey",
+    "section": "Professional Summary",
+    "text": "Professional Summary\nWASH professional and data analyst with 3+ years’ experience in governance, service delivery, and supporting efforts at accelerating progress towards safely managed and climate-resilient WASH. Skilled in coordinating multi-stakeholder processes, managing donor-funded programmes, and leveraging data, statistical analysis, geospatial analysis, and modelling to strengthen decision-making, improve policy alignment, and enhance service outcomes across rural, urban, and emergency contexts."
+  },
+  {
+    "objectID": "cv.html#core-competencies",
+    "href": "cv.html#core-competencies",
+    "title": "Emmanuel Dogbey",
+    "section": "Core Competencies",
+    "text": "Core Competencies\n\nProgram and project planning and management\n\nProposal and project concept note development\n\nStrategic stakeholder engagement and partnership building\n\nResource mobilisation and donor fund management\n\nTechnical backstopping and institutional strengthening\n\nMonitoring, evaluation and learning\n\nCritical and analytical research skills\n\nStatistical and geospatial data analysis and visualisation\n\nTechnical and policy briefs and reports"
+  },
+  {
+    "objectID": "cv.html#tools",
+    "href": "cv.html#tools",
+    "title": "Emmanuel Dogbey",
+    "section": "Tools",
+    "text": "Tools\nR | Python | QGIS | ArcGIS | Power BI | Microsoft Office Suite"
+  },
+  {
+    "objectID": "cv.html#formal-education",
+    "href": "cv.html#formal-education",
+    "title": "Emmanuel Dogbey",
+    "section": "Formal Education",
+    "text": "Formal Education\n\nMSc Risk, Durham University, UK — Distinction (Sep 2019 – Sep 2020)\n\nBA Geography and Rural Development, KNUST, Ghana — First Class Honours (Oct 2013 – Jun 2017)"
+  },
+  {
+    "objectID": "cv.html#short-courses-trainings",
+    "href": "cv.html#short-courses-trainings",
+    "title": "Emmanuel Dogbey",
+    "section": "Short Courses & Trainings",
+    "text": "Short Courses & Trainings\n\nSustainable Management of End-of-Life Vehicles, GIZ & Wuppertal Institute, Germany (May 2025)\n\nOCPP West Africa Marine Litter Training Programme, Ghana (Oct – Nov 2024)\n\nIntroduction to Project Management and Public Financial Management, Ghana (Jul 2024)\n\nAssistant Directors Training Workshop (Goal Setting, Self-leadership, Accountability), Ghana (May 2024)\n\nSustainable and Inclusive Urban Development, DANIDA Fellowship Centre, Denmark (Feb – Mar 2024)\n\nUrban Environmental Management, JICA & ICETT, Japan (Jan – Feb 2024)\n\nEnvironmental, Social, Health and Safety Training, World Bank & GARID, Ghana (Dec 2023)\n\nEssentials of Environmental and Social Risk Management, GIMPA & KNUST, Ghana (Mar 2023)"
+  },
+  {
+    "objectID": "cv.html#professional-experience",
+    "href": "cv.html#professional-experience",
+    "title": "Emmanuel Dogbey",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\nProgram Officer, Environmental Health and Sanitation\nMinistry of Local Government, Ghana | May 2022 – Present\nM&E Thematic Lead, GoG–UNICEF Sanitation & Hygiene Programme\nPlanning, Sector Coordination & M&E\n- Lead development of the costed 2026–2029 Sanitation Sector Medium Term Development Plan.\n- Harmonised national sanitation and hygiene M&E systems.\n- Developed planning and monitoring tools (Climate Resilient Sanitation District Update Tool, Target Setting Tool, Budgeting Tool).\n- Developed ToR for Sanitation M&E Task Team.\nWASH Climate Action\n- Supported integration of WASH in Ghana’s NDC 3.0 Programmes of Action.\n- Monitored 5 Integrated Recycling & Compost Plants for carbon trading readiness.\nUrban Sanitation Infrastructure\n- Environmental Safeguards Focal Point for GARID Project landfill and transfer station works.\n- Coordinated stakeholder consultations for Sustainable Faecal Sludge Management Project.\nWASH in Emergencies & Hand Hygiene\n- Contributed to WASH in Emergencies assessment during the Oct 2024 cholera outbreak.\n- Coordinated Ghana’s input to WHO Global Guidelines for Hand Hygiene.\nCapacity Development & Institutional Strengthening\n- Analysed sanitation HR capacity across 261 districts.\n- Led technical backstopping for BaSIS implementation in 17 districts.\n- Trained 110 District Staff on CLTS methods.\n- Conducted water treatment, water safety and financial flow assessments (TrackFin).\n\n\n\nConsultant\nAstute Business Consulting, Ghana | Nov 2021 – Apr 2022\n- Developed product/service descriptions and market differentiation for 17 companies.\n- Conducted ESIA for 2 bio-diesel startups (Nigeria & Ghana).\n- Advocated for Microsoft 365 collaborative model, reducing compilation time by 1 day.\n- Developed 2 proposals and 5 pitch decks for funding and partnerships.\n\n\n\nResearcher (MSc Dissertation Partnership)\nYorkshire Dales Rivers Trust, UK | May – Sep 2020\n- Developed hydrologic & flood models using R (Dynamic Topmodel) and HEC-RAS.\n- Produced design flood hydrographs and evaluated NFM effectiveness.\n- Drafted technical report with recommendations for NFM in Brompton catchment.\n\n\n\nInformation Officer\nKeta Municipal Assembly, Ghana | Sep 2018 – Aug 2019\n- Drafted report on fishing ban impacts for Minister of Fisheries.\n- Provided logistics and facilitated traditional authority engagement workshops.\n- Co-led town hall sessions to elicit citizen inputs into district plans.\n\n\n\nTeaching & Research Assistant\nKNUST, Ghana | Aug 2017 – Aug 2018\n- Supported academic research, data analysis, and publication.\n- Coordinated journal production for KNUST Journal of Geography and Development.\n- Managed field trip logistics for 120+ students.\n- Assisted final-year students with dissertations."
+  },
+  {
+    "objectID": "cv.html#portfolio",
+    "href": "cv.html#portfolio",
+    "title": "Emmanuel Dogbey",
+    "section": "Portfolio",
+    "text": "Portfolio\n\nPersonal Website — built with R Quarto & GitHub Pages (repo)\n\nStatsBank API in R — workflow for querying Ghana Statistical Service API.\n\nWASH Indicators Dataset — cleaned & harmonised 6 datasets from 2021 PHC.\n\nR Shiny Dashboard — interactive tool of sewage facilities in Ghana (repo)."
+  },
+  {
+    "objectID": "cv.html#publications-conferences",
+    "href": "cv.html#publications-conferences",
+    "title": "Emmanuel Dogbey",
+    "section": "Publications & Conferences",
+    "text": "Publications & Conferences\n\nAsori, M., Dogbey, E., Ampofo, S. T., Odei, J. (2023). Microplastic pollution in Africa… DOI\n\nAsori, M., Dogbey, E., Morgan, A. K., et al. (2022). GIS-based landfill siting in Ashanti Region, Ghana. DOI\n\nAsori, M., Dogbey, E., Dumedah, G. (2020). Wildfire hazard and risk modelling in Northern Ghana. Link\n\nAuthor. (2020). Modelling NFM for flood risk reduction in Brompton, UK. Yorkshire Dales Rivers Trust.\n\nAboagye, D., Dogbey, E. (2018). Gender, flood risk perception and adaptation to flooding in Kumasi. Presented at Ghana Geographers’ Conference."
+  },
+  {
+    "objectID": "cv.html#awards",
+    "href": "cv.html#awards",
+    "title": "Emmanuel Dogbey",
+    "section": "Awards",
+    "text": "Awards\n\nCommonwealth Shared Scholarship (2019–2020)\n\nBest Student in Geography and Rural Development, Royal Bank Awards (2017)"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "View my CV\nHi, I’m Emmanuel Dogbey, a WASH professional, spatial data analyst, and researcher based in Accra, Ghana, working at the intersection of WASH governance, geospatial analysis, and public policy. With a Master’s in Risk (Distinction) from Durham University and a First-Class BA in Geography and Rural Development from KNUST, I bring both academic rigour and practical experience to environmental health and sanitation systems strengthening.\nCurrently, I serve as Thematic Lead for Monitoring and Evaluation (M&E) under the GoG–UNICEF Sanitation and Hygiene Programme, where I coordinate national efforts to co-develop and strengthen M&E frameworks, scale digital tools such as the Basic Sanitation Information System (BaSIS), design planning and budgeting tools with integrated Results-Based Financing (RBF) features, and contribute to the rollout of SMS-based monitoring systems. All of this supports and promotes evidence-based decision-making at national and sub-national levels.\nI work across the full analytics pipeline—from data collection and cleaning to advanced analysis, spatial visualisation, and translation of insights to policy. My projects often combine statistical modelling, geospatial tools, and the production of decision-oriented reports and dashboards to support planning and programme management. For example, I have:\n\nModelled and predicted district-level waste collection rates using census data, district typologies, and regression analysis\nBuilt an interactive R Shiny dashboard visualising status of sewage treatment facilities in Ghana\nDeveloped an R-based workflow to query the Ghana Statistical Service’s StatsBank API, enabling reproducible access to official WASH indicators\nUsed Python to perform topic modelling and sentiment analysis on WASH and flood-related media content using NLP techniques.\nCreated custom mapping tools using Folium and Geopandas to overlay geocoded inputs on Ghana’s district boundaries\n\nBeyond analytics, I contribute to broader systems strengthening, facilitating inter-agency coordination, supporting policy and strategy development, and embedding the use of data and place-based geospatial insights into national and district-level planning. I work closely with Government institutions, development partners, and civil society to promote alignment, uptake, and impact.\nOver the years, I’ve contributed to national efforts on:\n\nClimate-resilient WASH programming (supporting Ghana’s NDCs)\nDistrict sanitation monitoring and open defecation free validation\nWASH financing using the Trackfin methodology\nCLTS capacity building and community engagement\nEnvironmental safeguards and solid waste management under the GARID Project\n\nMy technical toolbox includes R, Python, QGIS, ArcGIS, and the Microsoft Suite, with experience building tools, dashboards, and statistical models that support planning and policy. I’ve authored peer-reviewed publications on microplastic pollution, landfill siting, and wildfire risk, and regularly engage national and international partners to deliver high-impact, context-sensitive solutions.\nI aim to bridge data and governance to help build and strengthen systems that are credible, actionable, and equitable."
-  },
-  {
-    "objectID": "about.html#about",
-    "href": "about.html#about",
-    "title": "About",
-    "section": "",
-    "text": "Hi, I’m Emmanuel Dogbey, a WASH professional, spatial data analyst, and monitoring & evaluation (M&E) specialist based in Accra, Ghana, working at the intersection of WASH governance, geospatial analysis, and public policy. With a Master’s in Risk (Distinction) from Durham University and a First-Class BA in Geography and Rural Development from KNUST, I bring both academic rigour and practical experience to environmental health and sanitation systems strengthening.\nCurrently, I serve as Thematic Lead for Monitoring and Evaluation (M&E) under the GoG–UNICEF Sanitation and Hygiene Programme, where I coordinate national efforts to co-develop and strengthen M&E frameworks, scale digital tools such as the Basic Sanitation Information System (BaSIS), design planning and budgeting tools with integrated Results-Based Financing (RBF) features, and contribute to the rollout of SMS-based monitoring systems. All of this supports and promotes evidence-based decision-making at national and sub-national levels.\nI work across the full analytics pipeline—from data collection and cleaning to advanced analysis, spatial visualisation, and translation of insights to policy. My projects often combine statistical modelling, geospatial tools, and the production of decision-oriented reports and dashboards to support planning and programme management. For example, I have:\n\nModelled and predicted district-level waste collection rates using census data, district typologies, and regression analysis\nBuilt an interactive R Shiny dashboard visualising status of sewage treatment facilities in Ghana\nDeveloped an R-based workflow to query the Ghana Statistical Service’s StatsBank API, enabling reproducible access to official WASH indicators\nUsed Python to perform topic modelling and sentiment analysis on WASH and flood-related media content using NLP techniques.\nCreated custom mapping tools using Folium and Geopandas to overlay geocoded inputs on Ghana’s district boundaries\n\nBeyond analytics, I contribute to broader systems strengthening, facilitating inter-agency coordination, supporting policy and strategy development, and embedding the use of data and place-based geospatial insights into national and district-level planning. I work closely with Government institutions, development partners, and civil society to promote alignment, uptake, and impact.\nOver the years, I’ve contributed to national efforts on:\n\nClimate-resilient WASH programming (supporting Ghana’s NDCs)\nDistrict sanitation monitoring and open defecation free validation\nWASH financing using the Trackfin methodology\nCLTS capacity building and community engagement\nEnvironmental safeguards and solid waste management under the GARID Project\n\nMy technical toolbox includes R, Python, QGIS, ArcGIS, and the Microsoft Suite, with experience building tools, dashboards, and statistical models that support planning and policy. I’ve authored peer-reviewed publications on microplastic pollution, landfill siting, and wildfire risk, and regularly engage national and international partners to deliver high-impact, context-sensitive solutions.\nI aim to bridge data and governance to help build and strengthen systems that are credible, actionable, and equitable."
+    "text": "Hi, I’m Emmanuel Dogbey, a WASH professional, spatial data analyst, and researcher based in Accra, Ghana, working at the intersection of WASH governance, geospatial analysis, and public policy. With a Master’s in Risk (Distinction) from Durham University and a First-Class BA in Geography and Rural Development from KNUST, I bring both academic rigour and practical experience to WASH systems strengthening.\nCurrently, I serve as Thematic Lead for Monitoring and Evaluation (M&E) under the GoG–UNICEF WASH Programme, where I coordinate national efforts to co-develop and strengthen M&E frameworks, and scale digital and monitoring tools such as the Basic Sanitation Information System (BaSIS), design planning and budgeting tools. All of this supports and promotes evidence-based decision-making at national and sub-national levels.\nI work across the full analytics pipeline—from data collection and cleaning to advanced analysis, spatial visualisation, and translation of insights to policy. My projects often combine statistical modelling, geospatial tools, and the production of technical and executive reports and dashboards to support planning and programme management. For example, I have:\n\nModelled and predicted district-level waste collection rates using census data, district typologies, and regression analysis\nBuilt an interactive R Shiny dashboard visualising status of sewage treatment facilities in Ghana\nDeveloped an R-based workflow to query the Ghana Statistical Service’s StatsBank API, enabling reproducible access to official WASH indicators\nUsed Python to perform topic modelling and sentiment analysis on WASH and flood-related media content using NLP techniques.\nCreated custom mapping tools using Folium and Geopandas to overlay geocoded inputs on Ghana’s district boundaries\n\nBeyond analytics, I contribute to broader systems strengthening, facilitating inter-agency coordination, supporting policy and strategy development, and embedding the use of data and place-based geospatial insights into national and district-level planning. I work closely with Government institutions, development partners, and civil society to promote alignment, uptake, and impact.\nOver the years, I’ve contributed to national efforts on:\n\nClimate-resilient WASH programming (supporting Ghana’s NDCs)\nDistrict sanitation monitoring and open defecation free validation\nWASH financing using the Trackfin methodology\nCLTS capacity building and community engagement\nEnvironmental safeguards and solid waste management under the GARID Project\n\nMy technical toolbox includes R, Python, QGIS, ArcGIS, and the Microsoft Suite, with experience building tools, dashboards, and statistical models that support planning and policy. I’ve authored peer-reviewed publications on microplastic pollution, landfill siting, and wildfire risk, and regularly engage national and international partners to deliver high-impact, locally-contextualized solutions.\nI aim to bridge data and governance to help build and strengthen systems that are credible, actionable, and equitable."
   },
   {
     "objectID": "index.html",
@@ -40,145 +159,5 @@
     "title": "Hi! I’m Emmanuel Dogbey",
     "section": "Education",
     "text": "Education\nUniversity of Durham | Durham, UK  Institute of Hazard, Risk and Resilience | Department of Geography  MSc in Risk (Environment and Climate) | Sept 2019 - Sept 2020  Graduated with Distinction\nKwame Nkrumah University of Science and Technology | Kumasi, Ghana  Department of Geography and Rural Dev’t  B.A (Honours) in Geography and Rural Dev’t | Sept 2013 - June 2017  Graduated with First Class Honours\n\n\n🔍 See my Projects\n🧠 Learn more About me\n📰 Read my Blog"
-  },
-  {
-    "objectID": "projects.html#wash-service-level-indicator-construction",
-    "href": "projects.html#wash-service-level-indicator-construction",
-    "title": "Featured Projects",
-    "section": "🧼 WASH Service Level Indicator Construction",
-    "text": "🧼 WASH Service Level Indicator Construction\nTools: R, dplyr, sf, purrr, janitor Overview: Cleaned and harmonized six national datasets (population, sanitation, waste, water access, etc.) to compute access indicators across 261 districts. Integrated spatial joins and regional metadata. Status: Delivered to CDD-Ghana for planning and advocacy. Deliverables: R script, Final dataset (CSV)"
-  },
-  {
-    "objectID": "projects.html#predictive-modelling-of-waste-collection-rates-20102021",
-    "href": "projects.html#predictive-modelling-of-waste-collection-rates-20102021",
-    "title": "Featured Projects",
-    "section": "♻️ Predictive Modelling of Waste Collection Rates (2010–2021)",
-    "text": "♻️ Predictive Modelling of Waste Collection Rates (2010–2021)\nTools: R, ggplot2, lm, sf Overview: Built a linear regression model to estimate district-level solid waste collection rates from generation estimates and district types. Merged PHC datasets and visualized results using maps and residual plots. Status: Complete; ready for integration into dashboards or reports."
-  },
-  {
-    "objectID": "projects.html#sewage-facility-dashboard",
-    "href": "projects.html#sewage-facility-dashboard",
-    "title": "Featured Projects",
-    "section": "🌍 Sewage Facility Dashboard",
-    "text": "🌍 Sewage Facility Dashboard\nTools: R Shiny, leaflet, shinydashboard Overview: Interactive tool visualizing sewage treatment facilities across Ghana by region, condition, and type. Includes dynamic maps and summary tables. Status: MVP built; deployment pending. Source Code: GitHub Repository"
-  },
-  {
-    "objectID": "projects.html#statsbank-api-automation",
-    "href": "projects.html#statsbank-api-automation",
-    "title": "Featured Projects",
-    "section": "🌐 StatsBank API Automation",
-    "text": "🌐 StatsBank API Automation\nTools: R, httr2, jsonlite Overview: Created a full workflow for querying Ghana Statistical Service’s StatsBank API. Handled JSON logic, error handling, and data extraction for key WASH indicators from PHC 2021. Status: Script and tutorial complete; under version control. Tutorial: Blogpost-style HTML"
-  },
-  {
-    "objectID": "projects.html#solid-waste-trends-visualization",
-    "href": "projects.html#solid-waste-trends-visualization",
-    "title": "Featured Projects",
-    "section": "🧪 Solid Waste Trends Visualization",
-    "text": "🧪 Solid Waste Trends Visualization\nTools: R, ggplot2, sf Overview: Harmonized census waste data across 2010 and 2021, accounted for boundary changes, and visualized trends using choropleths and histograms. Highlighted disparities and temporal patterns. Status: Pipeline complete; supports planning insights."
-  },
-  {
-    "objectID": "projects.html#topic-modelling-of-flood-news-coverage",
-    "href": "projects.html#topic-modelling-of-flood-news-coverage",
-    "title": "Featured Projects",
-    "section": "🧠 Topic Modelling of Flood News Coverage",
-    "text": "🧠 Topic Modelling of Flood News Coverage\nTools: Python, Gensim, NLTK, Google CSE API Overview: Scraped and processed flood-related news (2010–2022) from Ghanaian sources. Applied LDA topic modelling and tuned using coherence scores to identify dominant reporting themes. Status: Topics finalized; visualization with pyLDAvis underway."
-  },
-  {
-    "objectID": "projects.html#sentiment-analysis-of-water-utility-coverage",
-    "href": "projects.html#sentiment-analysis-of-water-utility-coverage",
-    "title": "Featured Projects",
-    "section": "📰 Sentiment Analysis of Water Utility Coverage",
-    "text": "📰 Sentiment Analysis of Water Utility Coverage\nTools: Python, VADER, pandas Overview: Analyzed tone and emotional framing in post-2020 media coverage of the Ghana Water Company. Filtered low-information articles and generated outlet-wise sentiment summaries. Status: Preliminary results ready; dashboards in development."
-  },
-  {
-    "objectID": "projects.html#geo-tagged-locator-map-tool",
-    "href": "projects.html#geo-tagged-locator-map-tool",
-    "title": "Featured Projects",
-    "section": "🗺️ Geo-tagged Locator Map Tool",
-    "text": "🗺️ Geo-tagged Locator Map Tool\nTools: Python, Folium, Geopandas, Nominatim Overview: CLI-based tool that takes user input, returns geo-coordinates via Nominatim, and overlays location on Ghana district map using Folium. Status: Desktop-ready; web integration in progress."
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Emmanuel Dogbey",
-    "section": "",
-    "text": "📍 Accra, Ghana\n📞 +233 55 819 9879\n✉️ shaddaidogbey@gmail.com\n🔗 LinkedIn | Website | ORCID\n\n\n\nWASH professional and data analyst with 3+ years’ experience in governance, service delivery, and supporting efforts at accelerating progress towards safely managed and climate-resilient WASH. Skilled in coordinating multi-stakeholder processes, managing donor-funded programmes, and leveraging data, statistical analysis, geospatial analysis, and modelling to strengthen decision-making, improve policy alignment, and enhance service outcomes across rural, urban, and emergency contexts.\n\n\n\n\n\nProgram and project planning and management\n\nProposal and project concept note development\n\nStrategic stakeholder engagement and partnership building\n\nResource mobilisation and donor fund management\n\nTechnical backstopping and institutional strengthening\n\nMonitoring, evaluation and learning\n\nCritical and analytical research skills\n\nStatistical and geospatial data analysis and visualisation\n\nTechnical and policy briefs and reports\n\n\n\n\n\nR | Python | QGIS | ArcGIS | Power BI | Microsoft Office Suite\n\n\n\n\n\nMSc Risk, Durham University, UK — Distinction (Sep 2019 – Sep 2020)\n\nBA Geography and Rural Development, KNUST, Ghana — First Class Honours (Oct 2013 – Jun 2017)\n\n\n\n\n\n\nSustainable Management of End-of-Life Vehicles, GIZ & Wuppertal Institute, Germany (May 2025)\n\nOCPP West Africa Marine Litter Training Programme, Ghana (Oct – Nov 2024)\n\nIntroduction to Project Management and Public Financial Management, Ghana (Jul 2024)\n\nAssistant Directors Training Workshop (Goal Setting, Self-leadership, Accountability), Ghana (May 2024)\n\nSustainable and Inclusive Urban Development, DANIDA Fellowship Centre, Denmark (Feb – Mar 2024)\n\nUrban Environmental Management, JICA & ICETT, Japan (Jan – Feb 2024)\n\nEnvironmental, Social, Health and Safety Training, World Bank & GARID, Ghana (Dec 2023)\n\nEssentials of Environmental and Social Risk Management, GIMPA & KNUST, Ghana (Mar 2023)\n\n\n\n\n\n\n\nMinistry of Local Government, Ghana | May 2022 – Present\nM&E Thematic Lead, GoG–UNICEF Sanitation & Hygiene Programme\nPlanning, Sector Coordination & M&E\n- Lead development of the costed 2026–2029 Sanitation Sector Medium Term Development Plan.\n- Harmonised national sanitation and hygiene M&E systems.\n- Developed planning and monitoring tools (Climate Resilient Sanitation District Update Tool, Target Setting Tool, Budgeting Tool).\n- Developed ToR for Sanitation M&E Task Team.\nWASH Climate Action\n- Supported integration of WASH in Ghana’s NDC 3.0 Programmes of Action.\n- Monitored 5 Integrated Recycling & Compost Plants for carbon trading readiness.\nUrban Sanitation Infrastructure\n- Environmental Safeguards Focal Point for GARID Project landfill and transfer station works.\n- Coordinated stakeholder consultations for Sustainable Faecal Sludge Management Project.\nWASH in Emergencies & Hand Hygiene\n- Contributed to WASH in Emergencies assessment during the Oct 2024 cholera outbreak.\n- Coordinated Ghana’s input to WHO Global Guidelines for Hand Hygiene.\nCapacity Development & Institutional Strengthening\n- Analysed sanitation HR capacity across 261 districts.\n- Led technical backstopping for BaSIS implementation in 17 districts.\n- Trained 110 District Staff on CLTS methods.\n- Conducted water treatment, water safety and financial flow assessments (TrackFin).\n\n\n\n\nAstute Business Consulting, Ghana | Nov 2021 – Apr 2022\n- Developed product/service descriptions and market differentiation for 17 companies.\n- Conducted ESIA for 2 bio-diesel startups (Nigeria & Ghana).\n- Advocated for Microsoft 365 collaborative model, reducing compilation time by 1 day.\n- Developed 2 proposals and 5 pitch decks for funding and partnerships.\n\n\n\n\nYorkshire Dales Rivers Trust, UK | May – Sep 2020\n- Developed hydrologic & flood models using R (Dynamic Topmodel) and HEC-RAS.\n- Produced design flood hydrographs and evaluated NFM effectiveness.\n- Drafted technical report with recommendations for NFM in Brompton catchment.\n\n\n\n\nKeta Municipal Assembly, Ghana | Sep 2018 – Aug 2019\n- Drafted report on fishing ban impacts for Minister of Fisheries.\n- Provided logistics and facilitated traditional authority engagement workshops.\n- Co-led town hall sessions to elicit citizen inputs into district plans.\n\n\n\n\nKNUST, Ghana | Aug 2017 – Aug 2018\n- Supported academic research, data analysis, and publication.\n- Coordinated journal production for KNUST Journal of Geography and Development.\n- Managed field trip logistics for 120+ students.\n- Assisted final-year students with dissertations.\n\n\n\n\n\n\nPersonal Website — built with R Quarto & GitHub Pages (repo)\n\nStatsBank API in R — workflow for querying Ghana Statistical Service API.\n\nWASH Indicators Dataset — cleaned & harmonised 6 datasets from 2021 PHC.\n\nR Shiny Dashboard — interactive tool of sewage facilities in Ghana (repo).\n\n\n\n\n\n\nAsori, M., Dogbey, E., Ampofo, S. T., Odei, J. (2023). Microplastic pollution in Africa… DOI\n\nAsori, M., Dogbey, E., Morgan, A. K., et al. (2022). GIS-based landfill siting in Ashanti Region, Ghana. DOI\n\nAsori, M., Dogbey, E., Dumedah, G. (2020). Wildfire hazard and risk modelling in Northern Ghana. Link\n\nAuthor. (2020). Modelling NFM for flood risk reduction in Brompton, UK. Yorkshire Dales Rivers Trust.\n\nAboagye, D., Dogbey, E. (2018). Gender, flood risk perception and adaptation to flooding in Kumasi. Presented at Ghana Geographers’ Conference.\n\n\n\n\n\n\nCommonwealth Shared Scholarship (2019–2020)\n\nBest Student in Geography and Rural Development, Royal Bank Awards (2017)"
-  },
-  {
-    "objectID": "cv.html#profile",
-    "href": "cv.html#profile",
-    "title": "Emmanuel Dogbey",
-    "section": "Profile",
-    "text": "Profile"
-  },
-  {
-    "objectID": "cv.html#profile-summary",
-    "href": "cv.html#profile-summary",
-    "title": "Emmanuel Dogbey",
-    "section": "Profile Summary",
-    "text": "Profile Summary"
-  },
-  {
-    "objectID": "cv.html#professional-summary",
-    "href": "cv.html#professional-summary",
-    "title": "Emmanuel Dogbey",
-    "section": "",
-    "text": "WASH professional and data analyst with 3+ years’ experience in governance, service delivery, and supporting efforts at accelerating progress towards safely managed and climate-resilient WASH. Skilled in coordinating multi-stakeholder processes, managing donor-funded programmes, and leveraging data, statistical analysis, geospatial analysis, and modelling to strengthen decision-making, improve policy alignment, and enhance service outcomes across rural, urban, and emergency contexts."
-  },
-  {
-    "objectID": "cv.html#core-competencies",
-    "href": "cv.html#core-competencies",
-    "title": "Emmanuel Dogbey",
-    "section": "",
-    "text": "Program and project planning and management\n\nProposal and project concept note development\n\nStrategic stakeholder engagement and partnership building\n\nResource mobilisation and donor fund management\n\nTechnical backstopping and institutional strengthening\n\nMonitoring, evaluation and learning\n\nCritical and analytical research skills\n\nStatistical and geospatial data analysis and visualisation\n\nTechnical and policy briefs and reports"
-  },
-  {
-    "objectID": "cv.html#tools",
-    "href": "cv.html#tools",
-    "title": "Emmanuel Dogbey",
-    "section": "",
-    "text": "R | Python | QGIS | ArcGIS | Power BI | Microsoft Office Suite"
-  },
-  {
-    "objectID": "cv.html#formal-education",
-    "href": "cv.html#formal-education",
-    "title": "Emmanuel Dogbey",
-    "section": "",
-    "text": "MSc Risk, Durham University, UK — Distinction (Sep 2019 – Sep 2020)\n\nBA Geography and Rural Development, KNUST, Ghana — First Class Honours (Oct 2013 – Jun 2017)"
-  },
-  {
-    "objectID": "cv.html#short-courses-trainings",
-    "href": "cv.html#short-courses-trainings",
-    "title": "Emmanuel Dogbey",
-    "section": "",
-    "text": "Sustainable Management of End-of-Life Vehicles, GIZ & Wuppertal Institute, Germany (May 2025)\n\nOCPP West Africa Marine Litter Training Programme, Ghana (Oct – Nov 2024)\n\nIntroduction to Project Management and Public Financial Management, Ghana (Jul 2024)\n\nAssistant Directors Training Workshop (Goal Setting, Self-leadership, Accountability), Ghana (May 2024)\n\nSustainable and Inclusive Urban Development, DANIDA Fellowship Centre, Denmark (Feb – Mar 2024)\n\nUrban Environmental Management, JICA & ICETT, Japan (Jan – Feb 2024)\n\nEnvironmental, Social, Health and Safety Training, World Bank & GARID, Ghana (Dec 2023)\n\nEssentials of Environmental and Social Risk Management, GIMPA & KNUST, Ghana (Mar 2023)"
-  },
-  {
-    "objectID": "cv.html#professional-experience",
-    "href": "cv.html#professional-experience",
-    "title": "Emmanuel Dogbey",
-    "section": "",
-    "text": "Ministry of Local Government, Ghana | May 2022 – Present\nM&E Thematic Lead, GoG–UNICEF Sanitation & Hygiene Programme\nPlanning, Sector Coordination & M&E\n- Lead development of the costed 2026–2029 Sanitation Sector Medium Term Development Plan.\n- Harmonised national sanitation and hygiene M&E systems.\n- Developed planning and monitoring tools (Climate Resilient Sanitation District Update Tool, Target Setting Tool, Budgeting Tool).\n- Developed ToR for Sanitation M&E Task Team.\nWASH Climate Action\n- Supported integration of WASH in Ghana’s NDC 3.0 Programmes of Action.\n- Monitored 5 Integrated Recycling & Compost Plants for carbon trading readiness.\nUrban Sanitation Infrastructure\n- Environmental Safeguards Focal Point for GARID Project landfill and transfer station works.\n- Coordinated stakeholder consultations for Sustainable Faecal Sludge Management Project.\nWASH in Emergencies & Hand Hygiene\n- Contributed to WASH in Emergencies assessment during the Oct 2024 cholera outbreak.\n- Coordinated Ghana’s input to WHO Global Guidelines for Hand Hygiene.\nCapacity Development & Institutional Strengthening\n- Analysed sanitation HR capacity across 261 districts.\n- Led technical backstopping for BaSIS implementation in 17 districts.\n- Trained 110 District Staff on CLTS methods.\n- Conducted water treatment, water safety and financial flow assessments (TrackFin).\n\n\n\n\nAstute Business Consulting, Ghana | Nov 2021 – Apr 2022\n- Developed product/service descriptions and market differentiation for 17 companies.\n- Conducted ESIA for 2 bio-diesel startups (Nigeria & Ghana).\n- Advocated for Microsoft 365 collaborative model, reducing compilation time by 1 day.\n- Developed 2 proposals and 5 pitch decks for funding and partnerships.\n\n\n\n\nYorkshire Dales Rivers Trust, UK | May – Sep 2020\n- Developed hydrologic & flood models using R (Dynamic Topmodel) and HEC-RAS.\n- Produced design flood hydrographs and evaluated NFM effectiveness.\n- Drafted technical report with recommendations for NFM in Brompton catchment.\n\n\n\n\nKeta Municipal Assembly, Ghana | Sep 2018 – Aug 2019\n- Drafted report on fishing ban impacts for Minister of Fisheries.\n- Provided logistics and facilitated traditional authority engagement workshops.\n- Co-led town hall sessions to elicit citizen inputs into district plans.\n\n\n\n\nKNUST, Ghana | Aug 2017 – Aug 2018\n- Supported academic research, data analysis, and publication.\n- Coordinated journal production for KNUST Journal of Geography and Development.\n- Managed field trip logistics for 120+ students.\n- Assisted final-year students with dissertations."
-  },
-  {
-    "objectID": "cv.html#portfolio",
-    "href": "cv.html#portfolio",
-    "title": "Emmanuel Dogbey",
-    "section": "",
-    "text": "Personal Website — built with R Quarto & GitHub Pages (repo)\n\nStatsBank API in R — workflow for querying Ghana Statistical Service API.\n\nWASH Indicators Dataset — cleaned & harmonised 6 datasets from 2021 PHC.\n\nR Shiny Dashboard — interactive tool of sewage facilities in Ghana (repo)."
-  },
-  {
-    "objectID": "cv.html#publications-conferences",
-    "href": "cv.html#publications-conferences",
-    "title": "Emmanuel Dogbey",
-    "section": "",
-    "text": "Asori, M., Dogbey, E., Ampofo, S. T., Odei, J. (2023). Microplastic pollution in Africa… DOI\n\nAsori, M., Dogbey, E., Morgan, A. K., et al. (2022). GIS-based landfill siting in Ashanti Region, Ghana. DOI\n\nAsori, M., Dogbey, E., Dumedah, G. (2020). Wildfire hazard and risk modelling in Northern Ghana. Link\n\nAuthor. (2020). Modelling NFM for flood risk reduction in Brompton, UK. Yorkshire Dales Rivers Trust.\n\nAboagye, D., Dogbey, E. (2018). Gender, flood risk perception and adaptation to flooding in Kumasi. Presented at Ghana Geographers’ Conference."
-  },
-  {
-    "objectID": "cv.html#awards",
-    "href": "cv.html#awards",
-    "title": "Emmanuel Dogbey",
-    "section": "",
-    "text": "Commonwealth Shared Scholarship (2019–2020)\n\nBest Student in Geography and Rural Development, Royal Bank Awards (2017)"
   }
 ]
