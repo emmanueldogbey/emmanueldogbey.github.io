@@ -1,0 +1,541 @@
+---
+title: "Using R to retrieve data from the GSS StatsBank API"
+date: "2025-11-26"
+description: "A practical guide to navigating the GSS StatsBank API and retrieving 2021 Population and Housing Census data with R."
+categories: [R, APIs, Ghana Statistics]
+---
+
+# Using R to retrieve data from the GSS StatsBank API
+
+
+## Background
+
+The Ghana Statistical Service (GSS) provides survey and census data
+through the [StatsBank](https://statsbank.statsghana.gov.gh/index.html).
+Usually, users visit the website, find a table, and download it as an
+Excel or CSV file.
+
+However, if you are working on a large project or need to update your
+data frequently, downloading files manually can be tedious. A better
+approach is to use **R** to retrieve this data programmatically. The
+StatsBank website actually provides a built-in option to view the “API
+Query” for any table, which allows us to automate this process.
+
+This guide will walk you through how to connect to the GSS API and
+download specific statistics—specifically using the **2021 Population
+and Housing Census (PHC)** data.
+
+## Prerequisites
+
+We will use the `httr2` package to handle HTTP requests and response,
+and `tidyverse` for any data munging tasks.
+
+``` r
+library(httr2)
+library(tidyverse)
+```
+
+## Part 1: Connecting to the API
+
+The StatsBank API is built on
+[PxWeb](https://www.scb.se/globalassets/vara-tjanster/px-programmen/pxwebapi1.0_description_2024.pdf)
+technology, a standard used by many statistical agencies. Think of the
+API like a file explorer on your computer: it has a hierarchy of
+“folders” (Databases and Levels) that eventually lead to “files”
+(Tables).
+
+We start by defining the base URL for the GSS API:
+
+``` r
+URL = "https://statsbank.statsghana.gov.gh:443/api/v1/en/"
+request = request(URL)
+```
+
+## Part 2: Navigating the Databases
+
+To find the data we want, we need to build the URL incrementally by
+inspecting the API at each level to see what is available.
+
+When we perform a request on the base URL, the API returns a list of
+available databases.
+
+``` r
+response = request |> 
+    req_perform()
+
+response |> 
+    resp_body_json()
+```
+
+    [[1]]
+    [[1]]$dbid
+    [1] "Annual Household Income and Expenditure Survey (AHIES)"
+
+    [[1]]$text
+    [1] "Annual Household Income and Expenditure Survey (AHIES)"
+
+
+    [[2]]
+    [[2]]$dbid
+    [1] "Education(Admin)"
+
+    [[2]]$text
+    [1] "Education(Admin)"
+
+
+    [[3]]
+    [[3]]$dbid
+    [1] "Ghana Census of Agriculture (GCA)"
+
+    [[3]]$text
+    [1] "Ghana Census of Agriculture (GCA)"
+
+
+    [[4]]
+    [[4]]$dbid
+    [1] "GLSS7"
+
+    [[4]]$text
+    [1] "GLSS7"
+
+
+    [[5]]
+    [[5]]$dbid
+    [1] "Macro Economic Indicators"
+
+    [[5]]$text
+    [1] "Macro Economic Indicators"
+
+
+    [[6]]
+    [[6]]$dbid
+    [1] "Macroeconomic Indicators"
+
+    [[6]]$text
+    [1] "Macroeconomic Indicators"
+
+
+    [[7]]
+    [[7]]$dbid
+    [1] "PHC 2021 StatsBank"
+
+    [[7]]$text
+    [1] "PHC 2021 StatsBank"
+
+
+    [[8]]
+    [[8]]$dbid
+    [1] "PHC2010"
+
+    [[8]]$text
+    [1] "PHC2010"
+
+
+    [[9]]
+    [[9]]$dbid
+    [1] "Search Bar"
+
+    [[9]]$text
+    [1] "Search Bar"
+
+
+    [[10]]
+    [[10]]$dbid
+    [1] "Trade"
+
+    [[10]]$text
+    [1] "Trade"
+
+### Automating the Navigation
+
+Navigating deeper requires updating the URL path repeatedly. To make
+this easier, we can create a helper function.
+
+We will design this function to:
+
+1.  Accept our base URL and a list of folder names.
+2.  Check if we have reached a final table (which ends in `.px` in the
+    PxWeb system).
+3.  If it is a folder, list the contents so we know where to go next.
+4.  If it is a table, list the available variables (metadata) to help us
+    build our query.
+5.  **Return the updated request object** so we can save it and use it
+    later.
+
+``` r
+build_url = function(URL, ...) {
+    path = list(...)
+    req = request(URL)
+    
+    # Add each folder name to the URL path incrementally
+    full_req = purrr::reduce(path, req_url_path_append, .init = req)
+    
+    # Check if the last part of the path ends in ".px" (indicating a table)
+    is_table = FALSE
+
+    if (length(path) > 0) {
+      if (grepl("\\.px$", path[[length(path)]], ignore.case = TRUE)) {
+        is_table = TRUE
+      }
+    }
+
+    # Fetch the content to see what is inside (GET request)
+    response = req_perform(full_req)
+    body = resp_body_json(response)
+
+    if (is_table) {
+        # If it is a table, print the variable names (metadata)
+        message("Endpoint reached: Table found.")
+        message("Available variables:")
+        print(map_chr(body$variables, "code"))
+    } else {
+        # If it is a folder/database, list the children IDs
+        # (Note: The root level (databases) uses 'dbid', sub-levels use 'id')
+        key = if(length(path) == 0) "dbid" else "id"
+        print(map_chr(body, key))
+    }
+
+    # Return the request object to be assigned to a variable
+    return(full_req) 
+}
+```
+
+Now, we can “walk” down the folder structure. We assign the result of
+the final step to an object (e.g., `table_req`) so we don’t have to type
+the URL again.
+
+**1. Open the PHC 2021 Database:**
+
+``` r
+# We don't need to save this step, just viewing the topics
+build_url(URL, "PHC 2021 StatsBank")
+```
+
+     [1] "Difficulties in Performing Activities"
+     [2] "Economic Activity"                    
+     [3] "Education and Literacy"               
+     [4] "Fertility and Mortality"              
+     [5] "Housing"                              
+     [6] "Human Development Indicators"         
+     [7] "ICT"                                  
+     [8] "Multidimensional Poverty"             
+     [9] "Population"                           
+    [10] "Structures"                           
+    [11] "Water and Sanitation"                 
+
+    <httr2_request>
+    GET https://statsbank.statsghana.gov.gh:443/api/v1/en/PHC%202021%20StatsBank
+    Body: empty
+
+``` r
+build_url(URL, "PHC 2021 StatsBank", "Water and Sanitation" )
+```
+
+     [1] "defaecate_table.px"      "domesticWater_table.px" 
+     [3] "housetoilet_table.px"    "mainwater_table.px"     
+     [5] "service_table.px"        "solidDisposal_table.px" 
+     [7] "storage_table.px"        "timetaken.px"           
+     [9] "toiletfacility_table.px" "toiletservice_table.px" 
+    [11] "toilettype_table.px"     "waterDisposal_table.px" 
+
+    <httr2_request>
+    GET https://statsbank.statsghana.gov.gh:443/api/v1/en/PHC%202021%20StatsBank/Water%20and%20Sanitation
+    Body: empty
+
+**2. Reach the Target Table:**
+
+We identified that the table we want is `waterDisposal_table.px`. We
+will now call the function with the full path and **assign** it to
+`table_req`.
+
+``` r
+# This lists the variables inside the table and saves the connection
+table_req = build_url(URL, "PHC 2021 StatsBank", "Water and Sanitation", "waterDisposal_table.px")
+```
+
+    [1] "WaterDisposal"   "Locality"        "Geographic_Area"
+
+``` r
+print(table_req) # View the updated URL 
+```
+
+    <httr2_request>
+    GET https://statsbank.statsghana.gov.gh:443/api/v1/en/PHC%202021%20StatsBank/Water%20and%20Sanitation/waterDisposal_table.px
+    Body: empty
+
+The output will display the available variables (like `WaterDisposal`,
+`Geographic_Area`, etc.). We will use these codes in the next section.
+
+------------------------------------------------------------------------
+
+## Part 3: Constructing the Query
+
+Since we saved our connection in the `table_req` object, we only need to
+focus on *what* data we want to retrieve.
+
+The instructions must be sent as a **JSON** object. This object has two
+main parts:
+
+1.  **Query:** Which variables and filters to apply (e.g., specific
+    regions or categories).
+2.  **Response:** The format we want the file in (e.g., csv or json). A
+    list of formats is available in the [API
+    documentation](https://www.scb.se/globalassets/vara-tjanster/px-programmen/pxwebapi1.0_description_2024.pdf).
+
+### Defining the Variables
+
+According to the API documentation, we select data using a `code` (the
+variable name we saw in the previous step) and a `selection`. Refer to
+the API documentation for other filter options.
+
+- **Filter “item”:** Selects specific values listed.
+- **Filter “all”:** Selects everything (using the wildcard `*`).
+
+Here is how we construct a query to get data on specific “Water
+Disposal” methods:
+
+``` r
+# Construct the JSON query in R
+query_list = list(
+  query = list(
+    list(
+      code = "WaterDisposal",
+      selection = list(
+        filter = "item",
+        values = list(
+          "Total households in occupied dwelling unit",
+          "Through the sewerage system") # Selecting one specific method
+      )
+    ),
+    # We must select values for other variables or the API might aggregate them
+    list(
+       code = "Geographic_Area",
+       selection = list(filter = "all", values = list("*"))
+    )
+  ),
+  response = list(
+    format = "csv" # We want the data back as a CSV
+  )
+)
+```
+
+### How do we know what values to use in the query?
+
+You might be wondering: *How did we know to use “Through the sewerage
+system” as one of the variable values?*
+
+The API provides “metadata” for every table, which acts like a menu of
+options. Since we saved our request in the `table_req` object earlier,
+we can inspect it to see exactly what choices are available for each
+variable.
+
+Here is how to peek inside the “WaterDisposal” variable to find the
+valid codes:
+
+``` r
+# 1. Fetch the metadata for the table
+metadata = table_req |> 
+  req_perform() |> 
+  resp_body_json()
+
+# 2. Find the variable we are interested in (e.g., WaterDisposal)
+# This filters the list of variables to find the one with the code "WaterDisposal"
+variable_info = metadata$variables |> 
+  purrr::keep(~ .x$code == "WaterDisposal") |> 
+  purrr::flatten()
+
+# 3. Print the available options 
+tibble(
+  Code = unlist(variable_info$values)
+)
+```
+
+    # A tibble: 6 × 1
+      Code                                      
+      <chr>                                     
+    1 Total households in occupied dwelling unit
+    2 Thrown onto the ground/street/outside     
+    3 Through the sewerage system               
+    4 Through drainage into a pit (soak away)   
+    5 Flows or thrown into drains/gutter        
+    6 Other (Specify)                           
+
+Running this code will display a table of valid options where you can
+choose the option that matches the data you want and include that in
+your query list.
+
+## Part 4: Retrieving and Parsing the Data
+
+Finally, we put it all together. We take our saved `table_req` object,
+attach the query using `req_body_json`, and perform the request.
+
+Note that the API requires a **POST** request to retrieve the actual
+data. Once we get the response, we can pipe it directly into
+`readr::read_csv()` to create a dataframe.
+
+The raw data often comes in a “wide” format (with regions as columns),
+so we can use `tidyr` to pivot it into a tidy format for analysis.
+
+``` r
+# Attach the query to our existing request object
+final_req = table_req |> 
+  req_body_json(query_list)
+
+# Perform the request 
+response = 
+  final_req |> 
+  req_perform()  
+
+# Parse the data
+data = 
+  response |> 
+  resp_body_raw() |> 
+  readr::read_csv() |> 
+  tidyr::pivot_longer(
+    cols = -1, 
+    names_to = "Geographic_Area", 
+    values_to = "count" 
+  ) |>
+  tidyr::pivot_wider(
+    names_from = 1, 
+    values_from = count) |> 
+  rename(total_households = `Total households in occupied dwelling unit`,
+  sewerage_diposal = `Through the sewerage system`)
+ 
+head(data, n=10) 
+```
+
+    # A tibble: 10 × 3
+       Geographic_Area                           total_households sewerage_diposal
+       <chr>                                                <dbl>            <dbl>
+     1 Ghana                                              8356779           192638
+     2 Western                                             620785             9238
+     3 Jomoro Municipal                                     39438              418
+     4 Ellembelle                                           37206              651
+     5 Nzema East Municipal                                 28386              116
+     6 Ahanta West Municipal                                47288              581
+     7 Effia Kwesimintsim Municipal                         53717             1650
+     8 Sekondi Takoradi Metropolitan Area (STMA)            73876             1406
+     9 STMA-Takoradi                                        16271              323
+    10 STMA-Sekondi                                         17137              404
+
+This pipeline takes the raw CSV bytes, reads them into R, removes
+unnecessary index columns, and transforms the dataset so that
+“Geographic area” becomes a variable rather than a header. The result is
+a clean, analysis-ready dataframe.
+
+------------------------------------------------------------------------
+
+## Summary: The Complete Script
+
+Here is the full code from start to finish. You can copy and paste this
+directly into your R script to retrieve the data.
+
+``` r
+library(httr2)
+library(tidyverse)
+
+# --- 1. Setup Helper Function ---
+
+build_url = function(URL, ...) {
+    path = list(...)
+    req = request(URL)
+    
+    # Add each folder name to the URL path incrementally
+    full_req = purrr::reduce(path, req_url_path_append, .init = req)
+    
+    # Check if the last part of the path ends in ".px" (indicating a table)
+    is_table = FALSE
+    if (length(path) > 0) {
+      if (grepl("\\.px$", path[[length(path)]], ignore.case = TRUE)) {
+        is_table = TRUE
+      }
+    }
+
+    # Fetch the content to see what is inside (GET request)
+    response = req_perform(full_req)
+    body = resp_body_json(response)
+
+    if (is_table) {
+        message("Endpoint reached: Table found.")
+        message("Available variables:")
+        print(map_chr(body$variables, "code"))
+    } else {
+        # If it is a folder, list the children IDs
+        key = if(length(path) == 0) "dbid" else "id"
+        print(map_chr(body, key))
+    }
+
+    return(full_req) 
+}
+
+# --- 2. Connect and Navigate ---
+
+URL = "https://statsbank.statsghana.gov.gh:443/api/v1/en/"
+
+# Navigate to the specific table
+# Note: You can run build_url(URL, "PHC 2021 StatsBank") interactively to explore folders
+table_req = build_url(URL, "PHC 2021 StatsBank", "Water and Sanitation", "waterDisposal_table.px")
+
+# --- 3. Define the Query ---
+
+query_list = list(
+  query = list(
+    list(
+      code = "WaterDisposal",
+      selection = list(
+        filter = "item",
+        values = list(
+          "Total households in occupied dwelling unit",
+          "Through the sewerage system")
+      )
+    ),
+    list(
+       code = "Geographic_Area",
+       selection = list(filter = "all", values = list("*"))
+    )
+  ),
+  response = list(
+    format = "csv"
+  )
+)
+
+# --- 4. Fetch and Clean Data ---
+
+response =
+  table_req |> 
+  req_body_json(query_list) |> 
+  req_perform()  
+
+data = 
+  response |> 
+  resp_body_raw() |> 
+  readr::read_csv() |> 
+  tidyr::pivot_longer(
+    cols = -1, 
+    names_to = "Geographic_Area", 
+    values_to = "count" 
+  ) |>
+  tidyr::pivot_wider(
+    names_from = 1, 
+    values_from = count) |> 
+  rename(total_households = `Total households in occupied dwelling unit`,
+  sewerage_diposal = `Through the sewerage system`)
+
+# View final result
+head(data, n=10)
+```
+
+    # A tibble: 10 × 3
+       Geographic_Area                           total_households sewerage_diposal
+       <chr>                                                <dbl>            <dbl>
+     1 Ghana                                              8356779           192638
+     2 Western                                             620785             9238
+     3 Jomoro Municipal                                     39438              418
+     4 Ellembelle                                           37206              651
+     5 Nzema East Municipal                                 28386              116
+     6 Ahanta West Municipal                                47288              581
+     7 Effia Kwesimintsim Municipal                         53717             1650
+     8 Sekondi Takoradi Metropolitan Area (STMA)            73876             1406
+     9 STMA-Takoradi                                        16271              323
+    10 STMA-Sekondi                                         17137              404

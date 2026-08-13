@@ -52,3 +52,61 @@
   border: 1px solid #ddd;
   border-radius: 8px;
 }
+
+/* Blog tutorial code and console output */
+#quarto-document-content pre {
+  margin: 1.25rem 0;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+#quarto-document-content pre.r,
+#quarto-document-content pre.sourceCode,
+#quarto-document-content div.sourceCode pre {
+  background: #17212b;
+  border: 1px solid #263a4d;
+  color: #eef5fb;
+  box-shadow: 0 2px 8px rgba(23, 33, 43, 0.12);
+}
+
+#quarto-document-content pre.r::before,
+#quarto-document-content pre.sourceCode::before,
+#quarto-document-content div.sourceCode pre::before {
+  content: "R CODE";
+  display: block;
+  margin: -0.1rem 0 0.65rem;
+  color: #8bd5ca;
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  white-space: normal;
+}
+
+#quarto-document-content pre:not(.r):not(.sourceCode) {
+  background: #f4f7f9;
+  border: 1px solid #d9e1e7;
+  border-left: 4px solid #6c8ca6;
+  color: #334155;
+}
+
+#quarto-document-content pre:not(.r):not(.sourceCode)::before {
+  content: "OUTPUT";
+  display: block;
+  margin: -0.1rem 0 0.65rem;
+  color: #58748b;
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  white-space: normal;
+}
+
+#quarto-document-content pre.r code,
+#quarto-document-content pre.sourceCode code,
+#quarto-document-content div.sourceCode pre code {
+  color: inherit;
+}
