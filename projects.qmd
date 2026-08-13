@@ -30,6 +30,32 @@ A selection of projects combining statistical modeling, geospatial analysis, NLP
 
 :::
 
+::: {.grid}
+
+::: {.g-col-12 .card}
+## 🛰️ Built-up Change Detection around Weija Reservoir
+
+**Tools:** Google Earth Engine, JavaScript, Landsat 7, Sentinel-2, Random Forest
+
+**Overview:** Mapped settlement encroachment within a 2 km buffer of the Weija Reservoir, Ghana, from 2000 to 2025. The analysis uses a supervised binary classification to distinguish built-up from non-built-up land and quantify the pace of urban expansion around this critical water resource.
+
+**Method:** Dry-season, cloud-masked composites were created from Landsat 7 (2000–2003) and Sentinel-2 (2015, 2020 and 2025) surface-reflectance imagery. Blue, green, red, NIR, SWIR1 and SWIR2 bands, together with NDVI, NDBI, MNDWI and BSI, were used to train separate 200-tree Random Forest models for each year. Training data were manually digitised in Google Earth Pro and split 70:30 for class-stratified training and validation.
+
+**Key findings:** Overall model accuracy ranged from 85.9% to 92.6%. Built-up land (excluding the reservoir) increased from 27.19% in 2000 to 57.55% in 2025—an increase of 21.61 km² (111.69%).
+
+::: {.grid}
+::: {.g-col-5}
+![Study area: Weija Reservoir and surrounding districts.](images/weija-built-up-change.png){.project-figure}
+:::
+::: {.g-col-7}
+![Built-up and non-built-up classification results for 2000, 2015, 2020 and 2025.](images/weija-built-up-change-summary.png){.project-figure}
+:::
+:::
+
+[Google Earth Engine script — 2025](https://code.earthengine.google.com/42111efb6d6e189d32f2e2f7db480931) [2020](https://code.earthengine.google.com/7afa4cb502f9c4e81b00c40562234f00) [2015](https://code.earthengine.google.com/add31043ec3b4e78e095e5fb18032cdb) [2000](https://code.earthengine.google.com/fdb11a3bb1596780049043fe341df398)
+:::
+
+:::
 
 ::: {.grid}
 
@@ -104,7 +130,6 @@ A selection of projects combining statistical modeling, geospatial analysis, NLP
 :::
 
 :::
-
 
 
 

@@ -43,3 +43,12 @@
   background: #0066cc;
   color: white;
 }
+
+.project-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.75rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
